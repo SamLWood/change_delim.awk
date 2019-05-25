@@ -25,4 +25,4 @@ Other notes
 Ackowledgements
 ---------------
 
-This script is based on [a post on Unix & Linux StackExchange](https://unix.stackexchange.com/a/458430). It didn't get much attention, but it struck me as the best one considering that most of the other responses used non-standard tools or really ugly `sed` commands.
+This script is based on [a post on Unix & Linux StackExchange](https://unix.stackexchange.com/a/458430). It didn't get much attention, but it struck me as by far the best response considering that most of the other responses used non-standard tools and/or really ugly `sed` commands.
