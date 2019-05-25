@@ -13,6 +13,8 @@ Change the character indicated by the comment in the script and run it like so t
 
     $ awk -f change_delim.awk <spreadsheet>.csv > <new spreadsheet>
 
+There are, of course, other ways to do this, but this way uses a standard tool and can even just be embedded in a larger script.
+
 Other notes
 -----------
 
