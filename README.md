@@ -3,7 +3,7 @@ change_delim.awk
 
 Because of their simplicity, CSV files are great for processing spreadsheets in shell. Using `awk`, you can pull any field from them with one simple line:
 
-    $ awk -F ',' '{ if (FNR == <line number>) print $<column number> }'
+    $ awk -F ',' '{ if (FNR == <line number>) print $<column number> }' spreadsheet.csv
 
 The only problem is that, occasionally, the fields themselves will have commas in them, and, without any special care, this will result in `awk` splitting single fields in two and breaking the whole operation.
 
