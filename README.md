@@ -21,3 +21,8 @@ Other notes
  - In normal CSV files, fields can be quoted to allow for literal commas, double quote characters, or line breaks. Given a delimiter that is not used in the fields, this becomes unnecessary and only adds complexity, so these characters are removed.
  - Literal double quotes, denoted by two adjacent double quote characters inside of a quoted field, are preserved as normal double quote characters, but embedded line breaks, because they interfere with `awk`'s ability to parse the lines, are replaced with spaces.
  - Depending on where you got your spreadsheet, it is recommended that you also pipe the output of this script through `tr -d '\r'` to get rid of any carriage return characters in the file, since they are unnecessary in UNIX environments and tend to break things.
+
+Ackowledgements
+---------------
+
+This script is based on [a post on Unix & Linux StackExchange](https://unix.stackexchange.com/a/458430). It didn't get much attention, but it struck me as the best one considering that most of the other responses used non-standard tools or really ugly `sed` commands.
