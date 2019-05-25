@@ -13,7 +13,7 @@
 			}
 		}
 		if (char == "," && quoted == 0)
-			char = "|"
+			char = "|" # Change this character to your delimiter of choice
 		line = line char
 	}
 	if (quoted == 1)
