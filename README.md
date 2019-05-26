@@ -7,7 +7,7 @@ Because of their simplicity, CSV files are great for processing spreadsheets in 
 
 The only problem is that, occasionally, the fields themselves will have commas in them, and, without any special care, this will result in `awk` splitting single fields in two and breaking the whole operation.
 
-This script allows you to swap out the delimiting commas with any character (or characters) that you want, depending on your needs. Just find a character that's not used in the spreadsheet, set that as your delimiter, and use it as the field separator in the `awk` command that accesses the spreadsheet.
+This script allows you to swap out only the delimiting commas with any character (or characters) that you want, depending on your needs. Just find a character that's not used in the spreadsheet, set that as your delimiter, and use it as the field separator in the `awk` command that accesses the spreadsheet.
 
 Change the character indicated by the comment in the script and run it like so to get your reformatted spreadsheet.
 
