@@ -11,7 +11,7 @@ This script allows you to swap out only the delimiting commas with any character
 
 Change the character indicated by the comment in the script and run it like so to get your reformatted spreadsheet.
 
-    $ awk -f change_delim.awk <spreadsheet>.csv > <new spreadsheet>
+    $ awk -f change_delim.awk <csv spreadsheet> > <new spreadsheet>
 
 There are, of course, other ways to do this, but this way uses a standard tool and can even just be embedded in a larger script without having to worry about any additional dependencies.
 
