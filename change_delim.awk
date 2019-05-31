@@ -1,22 +1,22 @@
 {
-	line = ""
+	line = "";
 	if (FNR == 1)
-		quoted = 0
+		quoted = 0;
 	for (i = 1; i <= length($0); i++) {
-		char = substr($0, i, 1)
+		char = substr($0, i, 1);
 		if (char == "\"") {
 			if (quoted == 1 && i < length($0) && substr($0, i + 1, 1) == "\"")
-				i++
+				i++;
 			else {
-				char = ""
-				quoted = (quoted + 1) % 2
+				char = "";
+				quoted = (quoted + 1) % 2;
 			}
 		}
 		if (char == "," && quoted == 0)
-			char = "|" # Change this character to your delimiter of choice
-		line = line char
+			char = "|";
+		line = line char;
 	}
 	if (quoted == 1)
-		printf line " "
-	else print line
+		printf line " ";
+	else print line;
 }
