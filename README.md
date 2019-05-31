@@ -3,7 +3,7 @@ change_delim.awk
 
 Because of their simplicity, CSV files are great for processing spreadsheets in shell. Using `awk`, you can pull any field from them with one simple line:
 
-    $ awk -F ',' '{ if (FNR == <line number>) print $<column number> }' spreadsheet.csv
+    $ awk -F ',' '{ if (FNR == [line number]) print $[column number] }' [csv spreadsheet]
 
 The only problem is that, occasionally, the fields themselves will have commas in them, and, without any special care, this will result in `awk` splitting single fields in two and breaking the whole operation.
 
@@ -11,11 +11,11 @@ This script allows you to swap out only the delimiting commas with any character
 
 Change the character indicated by the comment in the script and run it like so to get your reformatted spreadsheet.
 
-    $ awk -f change_delim.awk <csv spreadsheet> > <new spreadsheet>
+    $ awk -f change_delim.awk [csv spreadsheet] > [new spreadsheet]
 
 Alternatively, you can use the included shell script, `chdelim`, to specify the new delimiter at call time without having to edit the file at all:
 
-    $ ./chdelim <delimiter> <csv spreadsheet>
+    $ ./chdelim [delimiter] [csv spreadsheet] > [new spreadsheet]
 
 `chdelim` can also read from standard input if you do not specify a spreadsheet to operate on.
 
