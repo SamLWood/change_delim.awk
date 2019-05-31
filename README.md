@@ -17,7 +17,7 @@ Alternatively, you can use the included shell script, `chdelim`, to specify the 
 
     $ ./chdelim [delimiter] [csv spreadsheet] > [new spreadsheet]
 
-`chdelim` can also read from standard input if you do not specify a spreadsheet to operate on.
+`chdelim` can also read from standard input if you do not specify a spreadsheet file to operate on.
 
 There are, of course, other ways to do this, but this way uses a standard tool and can even just be embedded in a larger script without having to worry about any additional dependencies.
 
