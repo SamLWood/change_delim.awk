@@ -13,6 +13,12 @@ Change the character indicated by the comment in the script and run it like so t
 
     $ awk -f change_delim.awk <csv spreadsheet> > <new spreadsheet>
 
+Alternatively, you can use the included shell script, `chdelim`, to specify the new delimiter at call time without having to edit the file at all:
+
+    $ ./chdelim <delimiter> <csv spreadsheet>
+
+`chdelim` can also read from standard input if you do not specify a spreadsheet to operate on.
+
 There are, of course, other ways to do this, but this way uses a standard tool and can even just be embedded in a larger script without having to worry about any additional dependencies.
 
 Other notes
