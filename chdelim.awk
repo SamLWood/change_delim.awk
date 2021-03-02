@@ -23,7 +23,7 @@
 # 
 # 	$ awk -f chdelim.awk -v delim='*' somefile.csv
 # 
-# This command generates a version fo somefile.csv that uses the asterisk
+# This command generates a version of somefile.csv that uses the asterisk
 # character as its delimiter.
 
 BEGIN {
